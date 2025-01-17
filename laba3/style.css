@@ -1,0 +1,81 @@
+/* Общие стили для текста */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+h1, h2 {
+  color: #1a73e8;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 450px;   
+  height: 300px;
+}
+
+.image-caption {
+  text-align: center; /* Центровка текста */
+  font-size: 16px; /* Размер шрифта */
+  color: #555; /* Цвет текста */
+  margin-top: 10px; /* Расстояние между фото и текстом */
+}
+
+ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}

@@ -1,6 +1,5 @@
-/* Общие стили для текста */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   line-height: 1.8;
   text-align: justify;
@@ -10,13 +9,19 @@ body {
   padding: 0;
 }
 
+
 a {
   color: #1a73e8;
-  text-decoration: none;
+  text-decoration: none; 
+  transition: color 0.3s;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #d32f2f; 
+}
+
+a:active {
+  color: #155a9a; 
 }
 
 header {
@@ -50,10 +55,10 @@ img {
 }
 
 .image-caption {
-  text-align: center; /* Центровка текста */
-  font-size: 16px; /* Размер шрифта */
-  color: #555; /* Цвет текста */
-  margin-top: 10px; /* Расстояние между фото и текстом */
+  text-align: center; 
+  font-size: 16px; 
+  color: #555; 
+  margin-top: 10px; 
 }
 
 ol {

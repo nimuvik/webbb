@@ -1,0 +1,244 @@
+/* Общие стили для всего документа */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto, sans-serif; /* Подключенный шрифт */
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #333333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для выделения текста */
+::selection {
+  background-color: #1a73e8;
+  color: white;
+}
+
+/* Стили для контейнера */
+.container {
+  width: 80%;
+  max-width: 1200px; /* Ограничение ширины контейнера */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Стили для заголовков */
+h1, h2, h4 {
+  color: #1a73e8;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Стили для ссылок */
+a {
+  color: #1a73e8;
+  text-decoration: none; /* Убираем подчеркивание */
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #d32f2f; /* Цвет ссылки при наведении */
+}
+
+a:active {
+  color: #155a9a; /* Цвет ссылки при нажатии */
+}
+
+/* Стили для блока "intro" */
+.intro {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.intro p {
+  margin-bottom: 15px;
+}
+
+/* Стили для списка фактов */
+.facts ol {
+  padding-left: 20px;
+}
+
+.facts li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Стили для новой карточки */
+.new-card {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-content {
+  display: none; /* Скрыто до завершения загрузки */
+  text-align: center;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Стили для подвала */
+footer {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для всех элементов списка */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Стили для четных и нечетных элементов списка */
+ul li:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+ul li:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Стили для формы */
+.registration-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.registration-form fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.registration-form legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.registration-form input,
+.registration-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.registration-form input:focus,
+.registration-form select:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+.registration-form input::placeholder {
+  color: #aaa;
+  opacity: 1; /* Firefox */
+}
+
+.registration-form input:required {
+  border: 2px solid red; /* Обязательные поля */
+}
+
+.submit-button {
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #155a9a;
+}
+
+/* Прикрепление футера к нижней части страницы */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Три равных столбца */
+  gap: 20px; /* Пространство между колонками */
+}
+
+.column {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

@@ -1,0 +1,109 @@
+/* Общие стили */
+body {
+  font-family: 'Roboto', sans-serif; /* Шрифт Google Fonts */
+  font-size: 1.125rem; /* Относительный размер текста (18px) */
+  line-height: 1.8;
+  text-align: justify;
+  color: #333; /* Цвет текста в формате HEX */
+  background-color: rgb(249, 249, 249); /* Цвет фона в формате RGB */
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: hsl(220, 80%, 55%); /* Цвет ссылок в формате HSL */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: hsl(0, 70%, 50%); /* Цвет при наведении */
+}
+
+a:active {
+  color: hsl(210, 70%, 35%); /* Цвет при нажатии */
+}
+
+header {
+  background-color: #fff; /* Белый цвет в HEX */
+  padding: 1.25rem; /* Относительный внутренний отступ */
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  display: flex; /* Flex-контейнер */
+  justify-content: center; /* Центровка содержимого по горизонтали */
+  align-items: center; /* Центровка содержимого по вертикали */
+}
+
+h1, h2 {
+  color: hsl(220, 80%, 55%); /* Цвет заголовков */
+}
+
+main {
+  padding: 1.25rem;
+  max-width: 80%; /* Ограничение ширины для адаптивности */
+  margin: 0 auto; /* Центровка основного контента */
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* Пространство между элементами */
+}
+
+section {
+  margin-bottom: 1.25rem;
+  padding: 0.625rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.3125rem;
+  display: flex; /* Flex-контейнер для секций */
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 100%; /* Адаптивная ширина */
+  max-width: 28.125rem; /* Максимальная ширина изображения (450px) */
+  height: auto; /* Пропорциональная высота */
+}
+
+.image-caption {
+  text-align: center;
+  font-size: 1rem; /* Относительный размер текста */
+  color: rgb(85, 85, 85); /* Цвет в формате RGB */
+  margin-top: 0.625rem; /* Отступ сверху */
+}
+
+ol {
+  padding-left: 1.25rem;
+  width: 100%; /* Заполнение ширины секции */
+}
+
+li {
+  margin-bottom: 0.625rem; /* Отступ между элементами списка */
+}
+
+footer {
+  background-color: #fff;
+  padding: 1.25rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Flex-контейнер для списка */
+  flex-direction: column; /* Элементы располагаются в столбик */
+  gap: 0.625rem; /* Отступ между элементами списка */
+}
+
+ul li {
+  margin-bottom: 0.625rem;
+}
+
+/* Правильные пути к шрифтам и другим внешним ресурсам */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');

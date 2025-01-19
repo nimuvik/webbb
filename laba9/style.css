@@ -1,3 +1,4 @@
+/* Общие стили */
 html {
   box-sizing: border-box;
 }
@@ -6,26 +7,28 @@ html {
 }
 
 body {
-  font-family: Roboto, sans-serif; 
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   text-align: justify;
-  color: #333333;
+  color: #333;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
 }
 
-/* Стили для выделения текста */
-::selection {
-  background-color: #1a73e8;
-  color: white;
+a {
+  color: #1a73e8;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.container {
-  width: 80%;
-  max-width: 1200px; 
-  margin: 0 auto;
+a:hover {
+  color: #d32f2f;
+}
+
+header {
+  text-align: center;
   padding: 20px;
 }
 
@@ -44,36 +47,34 @@ h2 {
   font-weight: 700;
 }
 
-h4 {
-  font-size: 1.2rem;
-  font-weight: 400;
+/* Стили для контейнера */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Стили для ссылок */
-a {
-  color: #1a73e8;
-  text-decoration: none; 
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: #d32f2f; 
-}
-
-a:active {
-  color: #155a9a;
-}
-
+/* Стили для разделов */
 .intro {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
 }
 
-.intro p {
-  margin-bottom: 15px;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.column {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .facts ol {
@@ -87,7 +88,7 @@ a:active {
 
 .new-card {
   position: relative;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -118,8 +119,30 @@ a:active {
   100% { transform: rotate(360deg); }
 }
 
+/* Стили для изображений */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Стили для подвала */
 footer {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -128,106 +151,9 @@ footer {
 
 ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
 }
 
 ul li {
   margin-bottom: 10px;
-}
-
-ul li:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-ul li:nth-child(odd) {
-  background-color: #ffffff;
-}
-
-.registration-form {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-
-.registration-form fieldset {
-  border: none;
-  margin-bottom: 20px;
-}
-
-.registration-form legend {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.registration-form label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.registration-form input,
-.registration-form select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: border-color 0.3s;
-}
-
-.registration-form input:focus,
-.registration-form select:focus {
-  border-color: #1a73e8;
-  outline: none;
-}
-
-.registration-form input::placeholder {
-  color: #aaa;
-  opacity: 1;
-}
-
-.registration-form input:required {
-  border: 2px solid red; 
-}
-
-.submit-button {
-  background-color: #1a73e8;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-}
-
-.submit-button:hover {
-  background-color: #155a9a;
-}
-
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px; 
-}
-
-.column {
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }

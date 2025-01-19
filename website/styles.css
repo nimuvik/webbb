@@ -2,27 +2,28 @@ body {
     font-family: 'Verdana', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f7fb;
+    background-color: #f8f9fa; /* Светло-серый фон */
+    color: #444444; /* Темно-серый текст */
 }
 
 header {
-    background-color: #2980b9;
-    color: white;
+    background-color: #e6e8eb; /* Светлый серо-голубой */
+    color: #333333; /* Темный текст */
     padding: 30px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-bottom: 5px solid #1abc9c;
+    border-bottom: 5px solid #a6b1c0; /* Темно-серо-голубой */
 }
 
 nav {
-    background-color: #34495e;
+    background-color: #d9d9d9; /* Светло-серый */
     padding: 10px 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
-    color: white;
+    color: #2c3e50; /* Темно-синий текст */
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
@@ -32,7 +33,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #1abc9c;
+    background-color: #b8c6d1; /* Светло-серо-синий */
     border-radius: 5px;
 }
 
@@ -40,57 +41,77 @@ main {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: white;
+    background-color: #ffffff; /* Белый фон */
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50; /* Темно-синий */
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555555; /* Средний серый */
 }
 
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #2980b9;
-    color: white;
+    background-color: #e6e8eb; /* Светлый серо-голубой */
+    color: #444444; /* Темно-серый */
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
 .exercise-item {
-    background-color: #ecf0f1;
+    background-color: #f3f4f6; /* Светло-серый */
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 5px;
+    border-left: 5px solid #9eb4c0; /* Светло-серо-синий */
 }
 
 .exercise-item:hover {
-    background-color: #bdc3c7;
+    background-color: #e0e4e9; /* Более насыщенный серо-голубой */
 }
 
 .exercise-item h4 {
     margin-bottom: 10px;
+    color: #2c3e50; /* Темно-синий */
 }
 
 .contact-form input, .contact-form textarea {
     padding: 12px;
-    border: 2px solid #bdc3c7;
+    border: 2px solid #ced4da; /* Нейтральный серо-голубой */
     border-radius: 8px;
     width: 100%;
     margin-bottom: 15px;
+    background-color: #f8f9fa; /* Светлый фон для ввода */
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #9eb4c0; /* Акцентный серо-голубой */
+    outline: none;
 }
 
 .contact-form button {
-    background-color: #1abc9c;
-    color: white;
+    font-family: 'Verdana', sans-serif;
+    background-color: #a5b5c5; /* Серо-голубой */
+    color: black;
     border: none;
     padding: 15px;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
     cursor: pointer;
     width: 100%;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #16a085;
+    background-color: #849aad; /* Темнее при наведении */
 }
 
 @media (max-width: 768px) {

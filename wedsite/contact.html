@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Изучение иностранных языков</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        main {
+            padding: 30px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h2 {
+            color: #34495e;
+        }
+
+        /* Стили для формы */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            padding: 12px;
+            border: 2px solid #bdc3c7;
+            border-radius: 8px;
+            font-size: 16px;
+            width: 100%;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #1abc9c;
+            outline: none;
+        }
+
+        button {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #16a085;
+        }
+
+        /* Псевдоклассы для обработки состояний формы */
+        input:disabled, textarea:disabled {
+            background-color: #ecf0f1;
+            cursor: not-allowed;
+        }
+
+        /* Адаптивность */
+        @media screen and (max-width: 768px) {
+            nav {
+                padding: 10px 0;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            form {
+                padding: 20px;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Контакты</h1>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="lessons.html">Уроки</a>
+    <a href="exercises.html">Упражнения</a>
+    <a href="contact.html">Контакты</a>
+</nav>
+
+<main>
+    <h2>Свяжитесь с нами</h2>
+    <p>Если у вас есть вопросы, предложения или пожелания, заполните форму ниже, и мы свяжемся с вами как можно скорее.</p>
+
+    <!-- Форма для отправки сообщения -->
+    <form action="submit_form.php" method="POST">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+        <label for="email">Ваш email:</label>
+        <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Введите ваше сообщение" required></textarea>
+
+        <button type="submit">Отправить</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2025 Изучение иностранных языков</p>
+</footer>
+
+</body>
+</html>

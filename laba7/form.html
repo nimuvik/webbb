@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация пользователя</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="index.html" style="color: inherit; text-decoration: none;">Кто же такие кошки?</a></h1>
+    </header>
+    
+    <main>
+      <h2>Регистрация нового пользователя</h2>
+      <form action="#" method="post" class="registration-form">
+        <fieldset>
+          <legend>Личная информация</legend>
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+
+          <label for="dob">Дата рождения:</label>
+          <input type="date" id="dob" name="dob" required>
+
+          <legend>Пол:</legend>
+          <div class="gender-buttons">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Мужской</label>
+
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Женский</label>
+
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Другой</label>
+          </div>
+          
+          <label for="password">Пароль:</label>
+          <input type="password" id="password" name="password" placeholder="Ваш пароль" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Контактные данные</legend>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+          <label for="phone">Телефон:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99" required>
+
+          <label for="contact-time">Удобный интервал для связи:</label>
+          <select id="contact-time" name="contact-time">
+            <option value="morning">Утро</option>
+            <option value="afternoon">День</option>
+            <option value="evening">Вечер</option>
+            <option value="night">Ночь</option>
+          </select>
+        </fieldset>
+
+        <button type="submit" class="submit-button">
+          Зарегистрироваться
+        </button>
+      </form>
+    </main>
+    
+    <footer>
+      <h4>Источники:</h4>
+      <ul>
+        <li><a href="https://cats.fandom.com/ru/wiki/Кошка" target="_blank">Котопедия: кошка</a></li>
+        <li><a href="https://www.purinaone.ru/cat/articles/behavior-guide/50-interesnyh-faktov-o-kotah" target="_blank">50 интересных фактов о кошках</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>

@@ -7,104 +7,76 @@
     <style>
         /* Основные стили */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f4f7fb;
         }
 
-        /* Заголовок страницы */
         header {
-            background-color: #2c3e50;
+            background-color: #2980b9;
             color: white;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid #1abc9c;
         }
 
-        /* Навигация */
         nav {
             background-color: #34495e;
-            padding: 15px 0;
+            padding: 10px 0;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
             color: white;
-            margin: 0 20px;
+            margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s ease;
+            font-size: 18px;
+            padding: 10px;
+            transition: all 0.3s ease;
         }
 
         nav a:hover {
-            color: #1abc9c;
+            background-color: #1abc9c;
+            border-radius: 5px;
         }
 
-        /* Основной контент */
         main {
-            padding: 30px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
             background-color: white;
-            margin: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Подвал */
         footer {
             text-align: center;
             padding: 15px;
-            background-color: #2c3e50;
+            background-color: #2980b9;
             color: white;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
 
-        /* Flexbox для центрирования */
-        .flex-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        /* Стилизация ссылок в разделе с уроками */
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            background-color: #ecf0f1;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        ul li:hover {
-            background-color: #bdc3c7;
-        }
-
-        /* Стилизация изображения */
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            object-fit: cover;
-        }
-
-        /* Стилизация формы регистрации */
         .registration-form {
             background-color: #ecf0f1;
-            padding: 30px 20px; /* Увеличиваем отступы сверху и снизу */
+            padding: 30px 20px;
             border-radius: 8px;
             max-width: 400px;
             margin: 30px auto;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            min-height: 350px; /* Устанавливаем минимальную высоту */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            min-height: 400px;
+        }
+
+        .registration-form h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2980b9;
         }
 
         .registration-form input {
@@ -137,6 +109,21 @@
         .registration-form button:hover {
             background-color: #16a085;
         }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            nav a {
+                font-size: 16px;
+            }
+
+            .registration-form {
+                padding: 20px;
+                min-height: 300px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -152,27 +139,18 @@
     <a href="contact.html">Контакты</a>
 </nav>
 
-<main class="flex-container">
+<main>
     <h2>Что мы предлагаем?</h2>
-    <p>Мы предлагаем вам различные уроки и упражнения для изучения иностранных языков.</p>
-    <p>Вы можете выбрать нужный язык и начать учить его прямо сейчас!</p>
-
-    <h3>Изображение</h3>
-    <img src="https://via.placeholder.com/600x300" alt="Изучение языков">
-
-    <!-- Форма регистрации -->
+    <p>Мы предлагаем вам различные уроки и упражнения для изучения иностранных языков. Вы можете выбрать нужный язык и начать учить его прямо сейчас!</p>
     <div class="registration-form">
         <h3>Зарегистрироваться</h3>
         <form action="register.php" method="POST">
             <label for="username">Имя пользователя:</label>
             <input type="text" id="username" name="username" placeholder="Введите имя пользователя" required>
-
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
-
             <label for="password">Пароль:</label>
             <input type="password" id="password" name="password" placeholder="Введите пароль" required>
-
             <button type="submit">Зарегистрироваться</button>
         </form>
     </div>

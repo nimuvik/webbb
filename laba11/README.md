@@ -32,7 +32,7 @@
 |10|scrollbar-color|Устанавливает цвет полосы прокрутки и ползунка.|https://chipsa.ru/|
 
 ## 2. Структура сайта [CHIPSA](https://chipsa.ru/)
-![Вид сайта]()
+![Вид сайта **CHIPSA**](https://github.com/nimuvik/webbb/blob/main/laba11/Вид%20сайта%20чипса.png)
 
 ***Первый уровень***: 
 - ```<!DOCTYPE html>```: Объявление типа документа.

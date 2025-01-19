@@ -1,4 +1,3 @@
-/* Общие стили для всего документа */
 html {
   box-sizing: border-box;
 }
@@ -7,7 +6,7 @@ html {
 }
 
 body {
-  font-family: Roboto, sans-serif; /* Подключенный шрифт */
+  font-family: Roboto, sans-serif; 
   font-size: 16px;
   line-height: 1.5;
   text-align: justify;
@@ -23,15 +22,13 @@ body {
   color: white;
 }
 
-/* Стили для контейнера */
 .container {
   width: 80%;
-  max-width: 1200px; /* Ограничение ширины контейнера */
+  max-width: 1200px; 
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Стили для заголовков */
 h1, h2, h4 {
   color: #1a73e8;
   text-align: center;
@@ -55,19 +52,18 @@ h4 {
 /* Стили для ссылок */
 a {
   color: #1a73e8;
-  text-decoration: none; /* Убираем подчеркивание */
+  text-decoration: none; 
   transition: color 0.3s;
 }
 
 a:hover {
-  color: #d32f2f; /* Цвет ссылки при наведении */
+  color: #d32f2f; 
 }
 
 a:active {
-  color: #155a9a; /* Цвет ссылки при нажатии */
+  color: #155a9a;
 }
 
-/* Стили для блока "intro" */
 .intro {
   background-color: #ffffff;
   padding: 20px;
@@ -80,7 +76,6 @@ a:active {
   margin-bottom: 15px;
 }
 
-/* Стили для списка фактов */
 .facts ol {
   padding-left: 20px;
 }
@@ -90,7 +85,6 @@ a:active {
   font-size: 1.1rem;
 }
 
-/* Стили для новой карточки */
 .new-card {
   position: relative;
   background-color: #ffffff;
@@ -102,8 +96,8 @@ a:active {
 }
 
 .loader {
-  border: 8px solid #f3f3f3; /* Light grey */
-  border-top: 8px solid #3498db; /* Blue */
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -115,7 +109,7 @@ a:active {
 }
 
 .card-content {
-  display: none; /* Скрыто до завершения загрузки */
+  display: none;
   text-align: center;
 }
 
@@ -124,7 +118,6 @@ a:active {
   100% { transform: rotate(360deg); }
 }
 
-/* Стили для подвала */
 footer {
   background-color: #ffffff;
   padding: 20px;
@@ -133,7 +126,6 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили для всех элементов списка */
 ul {
   list-style: none;
   padding-left: 0;
@@ -143,7 +135,6 @@ ul li {
   margin-bottom: 10px;
 }
 
-/* Стили для четных и нечетных элементов списка */
 ul li:nth-child(even) {
   background-color: #f9f9f9;
 }
@@ -152,7 +143,6 @@ ul li:nth-child(odd) {
   background-color: #ffffff;
 }
 
-/* Стили для формы */
 .registration-form {
   background-color: #ffffff;
   padding: 20px;
@@ -194,11 +184,11 @@ ul li:nth-child(odd) {
 
 .registration-form input::placeholder {
   color: #aaa;
-  opacity: 1; /* Firefox */
+  opacity: 1;
 }
 
 .registration-form input:required {
-  border: 2px solid red; /* Обязательные поля */
+  border: 2px solid red; 
 }
 
 .submit-button {
@@ -216,7 +206,6 @@ ul li:nth-child(odd) {
   background-color: #155a9a;
 }
 
-/* Прикрепление футера к нижней части страницы */
 footer {
   position: relative;
   bottom: 0;
@@ -225,8 +214,8 @@ footer {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Три равных столбца */
-  gap: 20px; /* Пространство между колонками */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
 }
 
 .column {

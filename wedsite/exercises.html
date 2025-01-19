@@ -3,47 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Упражнения - Изучение иностранных языков</title>
+    <title>Упражнения</title>
     <style>
-        /* Общие стили */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f4f7fb;
         }
 
         header {
-            background-color: #2c3e50;
+            background-color: #2980b9;
             color: white;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         nav {
             background-color: #34495e;
-            padding: 15px 0;
+            padding: 10px 0;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
             color: white;
-            margin: 0 20px;
+            margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s ease;
+            font-size: 18px;
+            padding: 10px;
+            transition: all 0.3s ease;
         }
 
         nav a:hover {
-            color: #1abc9c;
+            background-color: #1abc9c;
+            border-radius: 5px;
         }
 
         main {
-            padding: 30px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
             background-color: white;
-            margin: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
@@ -51,35 +53,30 @@
         footer {
             text-align: center;
             padding: 15px;
-            background-color: #2c3e50;
+            background-color: #2980b9;
             color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
+        .exercise-item {
             background-color: #ecf0f1;
-            margin: 10px 0;
-            padding: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
         }
 
-        ul li:hover {
+        .exercise-item:hover {
             background-color: #bdc3c7;
+        }
+
+        .exercise-item h4 {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Упражнения для изучающих языки</h1>
+    <h1>Упражнения по иностранным языкам</h1>
 </header>
 
 <nav>
@@ -90,12 +87,19 @@
 </nav>
 
 <main>
-    <h2>Попробуйте решить наши упражнения:</h2>
-    <ul>
-        <li><a href="#">Упражнение 1: Перевод фраз</a></li>
-        <li><a href="#">Упражнение 2: Заполнение пропусков</a></li>
-        <li><a href="#">Упражнение 3: Слушание и понимание</a></li>
-    </ul>
+    <h2>Выберите упражнение</h2>
+    <div class="exercise-item">
+        <h4>Упражнение 1: Английская грамматика</h4>
+        <a href="#">Перейти к упражнению</a>
+    </div>
+    <div class="exercise-item">
+        <h4>Упражнение 2: Французские слова</h4>
+        <a href="#">Перейти к упражнению</a>
+    </div>
+    <div class="exercise-item">
+        <h4>Упражнение 3: Испанский для начинающих</h4>
+        <a href="#">Перейти к упражнению</a>
+    </div>
 </main>
 
 <footer>
